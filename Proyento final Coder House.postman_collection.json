@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "a3078326-6f01-48d3-968f-3053a3ebddd6",
+		"name": "Proyento final Coder House",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21783944"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "localhost:8080/coderhouse/cliente/31990240",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/coderhouse/cliente/31990240",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"cliente",
+								"31990240"
+							]
+						},
+						"description": "buscar cliente por DNI"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/coderhouse/cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"dni\": 28367890,\r\n        \"nombre\": \"Claudita\",\r\n        \"apellido\": \"Almeida\",\r\n        \"fechaDeNacimiento\": \"1983-09-21\",\r\n        \"edad\": 38\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coderhouse/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"cliente"
+							]
+						},
+						"description": "Actualizar clientes"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/coderhouse/cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": 28367891,\r\n    \"nombre\": \"Claudita\",\r\n    \"apellido\": \"Almeida\",\r\n    \"fechaDeNacimiento\": \"1983-09-21\",\r\n    \"edad\": 38\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coderhouse/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"cliente"
+							]
+						},
+						"description": "Crear cliente"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/coderhouse/cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/coderhouse/cliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"cliente"
+							]
+						},
+						"description": "Listar clientes"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "localhost:8080/coderhouse/producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/coderhouse/producto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/coderhouse/producto/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/coderhouse/producto/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"producto",
+								"1"
+							]
+						},
+						"description": "buscar un producto"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/coderhouse/producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"descripcion\": \"Zapatilla Nike\",\r\n    \"precio\": 35000,\r\n    \"precioUnitario\": null,\r\n    \"activo\": true,\r\n    \"fechaCreacion\": \"2021-06-16\",\r\n    \"fechaActualizacion\": \"2022-07-16\",\r\n    \"stock\": 451\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coderhouse/producto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"producto"
+							]
+						},
+						"description": "Modificar un producto"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/coderhouse/producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\": \"Buzo Addidas\",\r\n    \"precio\": 19500,\r\n    \"precioUnitario\": null,\r\n    \"activo\": true,\r\n    \"fechaCreacion\": \"2020-02-16\",\r\n    \"fechaActualizacion\": \"2022-08-12\",\r\n    \"stock\": 150\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coderhouse/producto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"producto"
+							]
+						},
+						"description": "Crear un producto"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comprobantes",
+			"item": [
+				{
+					"name": "localhost:8080/coderhouse/comprobante",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"cliente\":{\r\n      \"dni\":31990240\r\n   },\r\n   \"items\":[\r\n      {\r\n         \"cantidad\":451,\r\n         \"producto\":{\r\n            \"id\":1\r\n         }\r\n      }\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/coderhouse/comprobante",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"comprobante"
+							]
+						},
+						"description": "Crear un comprobante"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/coderhouse/comprobante",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/coderhouse/comprobante",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coderhouse",
+								"comprobante"
+							]
+						},
+						"description": "listar comprobantes"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

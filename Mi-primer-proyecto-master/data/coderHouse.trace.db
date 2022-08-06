@@ -1,0 +1,4 @@
+2022-08-06 13:56:43 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ITEMS" no encontrada
+Table "ITEMS" not found; SQL statement:
+select * from items [42102-214]
